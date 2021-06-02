@@ -24,6 +24,11 @@ const UserScreen = (props) => {
     });
   }, []);
 
+  const logout = () => {
+    firebase.auth.signOut()
+    props.navigation.navigate("LoginScreen");
+  }
+
   return (
     <ScrollView>
       <Button

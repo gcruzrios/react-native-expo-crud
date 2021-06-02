@@ -11,6 +11,10 @@ import CreateUserScreen from "./screens/CreateUserScreen";
 import UserDetailScreen from "./screens/UserDetailScreen";
 import UsersList from "./screens/UsersList";
 
+import LoginScreen from "./screens/LoginScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+
+
 const Stack = createStackNavigator();
 
 function MyStack() {
@@ -26,6 +30,17 @@ function MyStack() {
         },
       }}
     >
+
+    <Stack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{ title: "Login" }}
+      />
+      <Stack.Screen
+        name="RegisterScreen"
+        component={RegisterScreen}
+        options={{ title: "Registro" }}
+      /> 
       <Stack.Screen
         name="UsersList"
         component={UsersList}
