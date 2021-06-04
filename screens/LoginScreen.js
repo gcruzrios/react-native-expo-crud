@@ -57,7 +57,7 @@ const LoginScreen = (props) => {
           <TextInput
             placeholder="Email"
             multiline={false}
-            numberOfLines={4}
+            numberOfLines={1}
             onChangeText={(value) => handleChangeText(value, "email")}
             value={state.email}
           />
